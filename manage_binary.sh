@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# 自动去除 Windows 风格换行符
+sed -i 's/\r$//' "$0"
+
 # 配置
 BINARY_PATH="/root/manage_binary.sh"
 REMOTE_URL="https://raw.githubusercontent.com/tmxk2020/binary-manager/main/manage_binary.sh"
